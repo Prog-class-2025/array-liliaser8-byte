@@ -185,7 +185,7 @@ namespace Project1 {
 				if (mas1[i] % 2 == 0) evenCount++;
 				else oddCount++;
 			}
-			MessageBox::Show("Парних елементів: " + evenCount.ToString() + "\nНепарних елементів: " + oddCount.ToString(), "Завдання 4: Парні/Непарні");
+			MessageBox::Show("Парних елементів: " + evenCount.ToString() + "\nНепарних елементів: " + oddCount.ToString());
 		}
 		if (comboBox1->SelectedIndex == 5) // Заповнити матрицю
 		{
@@ -228,7 +228,9 @@ namespace Project1 {
 				for (int j = i + 1; j < 5; j++)
 				{
 				// обмін елементів
-				
+					int temp = matrix[i][j];
+					matrix[i][j] = matrix[j][i];
+					matrix[j][i] = temp;
 				}
 
 			dataGridView1->ColumnCount = 5;
