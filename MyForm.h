@@ -173,6 +173,7 @@ namespace Project1 {
 					max = mas1[i];
 				}
 			}
+
 			label1->Text = "Максимальний елемент масиву: " + max.ToString();
 		}
 
