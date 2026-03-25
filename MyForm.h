@@ -167,7 +167,13 @@ namespace Project1 {
 
 		if (comboBox1->SelectedIndex == 3) // Максимум
 		{
-
+			int max = mas1[0];
+			for (int i = 1; i < 5; i++) {
+				if (mas1[i] > max) {
+					max = mas1[i];
+				}
+			}
+			label1->Text = "Максимальний елемент масиву: " + max.ToString();
 		}
 
 		if (comboBox1->SelectedIndex == 4) // Парні/непарні
